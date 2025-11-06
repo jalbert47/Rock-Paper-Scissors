@@ -149,6 +149,8 @@ def NormalMode(points, goalpoints, rounds, name="MegaMind"):
     time.sleep(2.5)
     print(f"Your goal is {goalpoints}, try not to go down")
     time.sleep(2.5)
+    print(f"{RoboInfo['RoboName']} has {RoboInfo['RoboPoints']}.")
+    time.sleep(2.5)
     print(
         f"It looks like you have been playing for {-(rounds-(round((goalpoints / 100) * 1.8)))} round(s), you have {rounds} round(s) left"
     )
@@ -596,4 +598,5 @@ else:
   exit()
 FunMode(PlayerSettings["Points"], PlayerSettings["GoalPoints"],
         PlayerSettings["Rounds"], choice, mode, PlayerSettings["name"])
+
 
